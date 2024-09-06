@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="display">
+                <input type="text" id="screen" class="input-display" disabled>
+            </div>
+            <div class="all-button">
+                <button class="btn-style" onclick="clearDisplay()">AC</button>
+                <button class="btn-style" onclick="showDisplay('**')">X¹</button>
+                <button class="btn-style" onclick="showDisplay('%')">%</button>
+                <button class="btn-style btn-colour1" onclick="showDisplay('/')">/</button><br>
+                <button class="btn-style" onclick="showDisplay('7')">7</button>
+                <button class="btn-style" onclick="showDisplay('8')">8</button>
+                <button class="btn-style" onclick="showDisplay('9')">9</button>
+                <button class="btn-style btn-colour1" onclick="showDisplay('*')">*</button><br>
+                <button class="btn-style" onclick="showDisplay('4')">4</button>
+                <button class="btn-style" onclick="showDisplay('5')">5</button>
+                <button class="btn-style" onclick="showDisplay('6')">6</button>
+                <button class="btn-style btn-colour1" onclick="showDisplay('-')">-</button><br>
+                <button class="btn-style" onclick="showDisplay('1')">1</button>
+                <button class="btn-style" onclick="showDisplay('2')">2</button>
+                <button class="btn-style" onclick="showDisplay('3')">3</button>
+                <button class="btn-style btn-colour1" onclick="showDisplay('+')">+</button><br>
+                <button class="btn-style zero-button" onclick="showDisplay('0')">0</button>
+                <button class="btn-style" onclick="showDisplay('.')">.</button>
+                <button class="btn-style btn-colour1" onclick="equalsDisplay()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
